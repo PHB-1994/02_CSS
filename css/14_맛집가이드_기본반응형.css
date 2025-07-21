@@ -76,7 +76,7 @@ padding 상하 10 좌우 20
 }
 
 /***** 메인페이지 CSS *****/
-.alert {
+.alret {
   background-color: #fff3cd;
   padding: 20px;
   border-left: 4px solid #ffc107;
@@ -225,6 +225,10 @@ input select textarea 태그에
   background-color: #6c757d;
   color: white;
 }
+.sign-container .btn-group:last-child {
+  background-color: #6c757d;
+  color: white;
+}
 .sign-container button:hover {
   background-color: #5a6268;
 }
@@ -286,7 +290,7 @@ input select textarea 태그에
     width: 80%;
     text-align: center;
   }
-  .alert {
+  .alret {
     padding: 15px;
     font-size: 0.9rem;
   }
