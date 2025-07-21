@@ -37,6 +37,20 @@ a {
   font-size: 18px;
 }
 
+.hamburger {
+  display: none;
+  /*
+    평소에는 숨기기 
+    display : block; -> 460 때 설정
+    */
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
 /*
 클래스 nav
 display 이용해서 한줄 정렬
@@ -266,7 +280,7 @@ input select textarea 태그에
   background-color: #ff6b6b;
   color: white;
 }
-.sign-container button:hover {
+.sign-container button:first-child:hover {
   background-color: #ff5252;
 }
 /* 초기화 버튼 */
@@ -274,7 +288,7 @@ input select textarea 태그에
   background-color: #6c757d;
   color: white;
 }
-.sign-container button:hover {
+.sign-container button:last-child:hover {
   background-color: #5a6268;
 }
 
@@ -333,6 +347,7 @@ input select textarea 태그에
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .재료아이템 {
   background-color: #4caf50;
@@ -369,6 +384,16 @@ input select textarea 태그에
   border-color: #ff6b6b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+.order-item strong {
+  display: block;
+  color: #333;
+  margin-bottom: 8px;
+}
+.order-item p {
+  color: #ff6b6b;
+  font-size: 1.5rem; /* 24px */
+}
+
 /* 태블릿 반응형 768px */
 @media (max-width: 768px) {
   .container {
@@ -378,7 +403,7 @@ input select textarea 태그에
   }
 
   h1 {
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .nav {
@@ -404,6 +429,10 @@ input select textarea 태그에
     width: 100%;
     margin: 10px 0;
   }
+  .order-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 /* 모바일 반응형 460px */
@@ -417,6 +446,10 @@ input select textarea 태그에
   }
   h1 {
     font-size: 29px;
+  }
+  /* 네비게이션을 모바일에서 확인했을 때 토글형태로 확인할 수 있다. */
+  .hamburger {
+    display: block;
   }
   .nav {
     flex-direction: column;
@@ -437,5 +470,12 @@ input select textarea 태그에
   }
   .sign-container button {
     padding: 15px;
+  }
+  .재료리스트 {
+    gap: 8px;
+  }
+  .재료아이템 {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 }
