@@ -454,6 +454,10 @@ input select textarea 태그에
   .nav {
     flex-direction: column;
     align-items: center;
+    display: none;
+  }
+  .nav.show {
+    display: flex;
   }
   .nav a {
     width: 80%;
