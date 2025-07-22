@@ -96,7 +96,7 @@ padding 상하 10 좌우 20
 }
 
 /***** 메인페이지 CSS *****/
-.alret {
+.alert {
   background-color: #fff3cd;
   padding: 20px;
   border-left: 4px solid #ffc107;
@@ -463,7 +463,7 @@ input select textarea 태그에
     width: 80%;
     text-align: center;
   }
-  .alret {
+  .alert {
     padding: 15px;
     font-size: 0.9rem;
   }
